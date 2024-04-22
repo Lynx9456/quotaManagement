@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.quota.dao.QuotaRecordsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.test.quota.bean.QuotaRecords">
+        <id column="id" property="id" />
+        <result column="gmt_create" property="gmtCreate" javaType="java.util.Date"/>
+        <result column="gmt_modified" property="gmtModified" javaType="java.util.Date"/>
+        <result column="account_id" property="accountId"/>
+        <result column="transaction_type" property="transactionType"/>
+        <result column="amount" property="amount"/>
+        <result column="quota_after" property="quotaAfter"/>
+        <result column="quota_type" property="quotaType"/>
+        <result column="operator" property="operator"/>
+        <result column="desc" property="desc"/>
+    </resultMap>
+
+</mapper>
